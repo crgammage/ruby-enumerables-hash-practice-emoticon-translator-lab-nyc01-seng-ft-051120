@@ -2,19 +2,12 @@ require "yaml"
 require 'pry'
 def load_library(file)
   library = YAML.load_file(file)
-  # new_hash = {
-  #   'get_emoticon' => {}, 'get_meaning' => {}
-  # }
   emoticons = {}
   library.each do |feeling, value|
     emoticons[feeling] = {}
     emoticons[feeling][:japanese] = value[1]
     emoticons[feeling][:english] = value[0]
   end
-  # emoticons.each {|meaning, emoticons|
-  # new_hash['get_emoticon'][emoticons[0]] = emoticons[1]
-  # new_hash['get_meaning'][emoticons[1]] = meaning}
-  # new_hash
   emoticons
 end
 
