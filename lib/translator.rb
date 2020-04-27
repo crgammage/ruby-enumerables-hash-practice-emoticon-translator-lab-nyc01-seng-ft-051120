@@ -31,6 +31,7 @@ def get_english_meaning(file, emoticon)
     # binding.pry
     if emoticon == emoticons[key][:japanese]
       return true
+      key
     else
       return "That is not an emoticon."
     end
