@@ -29,6 +29,7 @@ def get_english_meaning(file, emoticon)
   emoticons = load_library(file)
   emoticons.keys.find do |key|
     if emoticon == emoticons[key][:japanese]
+      key
     end
   end
     return "That is not an emoticon."
