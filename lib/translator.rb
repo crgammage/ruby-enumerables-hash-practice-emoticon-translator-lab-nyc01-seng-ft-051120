@@ -30,7 +30,7 @@ def get_english_meaning(file, emoticon)
   emoticons.keys.find do |key|
     # binding.pry
     if emoticon == emoticons[key][:japanese]
-      emoticons[key]
+      return emoticons[key]
     else
       return "That is not an emoticon."
     end
