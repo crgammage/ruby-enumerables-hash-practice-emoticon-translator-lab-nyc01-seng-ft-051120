@@ -32,5 +32,5 @@ def get_english_meaning(file, emoticon)
       return key
     end
   end
-    return "That is not an emoticon."
+    return "Sorry, that emoticon was not found."
 end
