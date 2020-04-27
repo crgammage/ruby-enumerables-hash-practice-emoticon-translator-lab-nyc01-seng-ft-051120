@@ -32,8 +32,7 @@ def get_english_meaning(file, emoticon)
     if emoticon == emoticons[key][:japanese]
       return emoticons[key]
     end
-      if !emoticon == emoticons[key][:japanese]
-      return "That is not an emoticon."
     end
+    return "That is not an emoticon."
   end
 end
