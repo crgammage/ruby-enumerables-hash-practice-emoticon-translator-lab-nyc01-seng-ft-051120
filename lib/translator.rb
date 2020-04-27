@@ -36,3 +36,4 @@ def get_english_meaning(file, emoticon)
     return "That is not an emoticon."
   end
 end
+end
